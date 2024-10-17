@@ -1,0 +1,13 @@
+default: &defaults
+  db: poc
+  host: 172.17.0.1
+  port: 6379
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test:
+  <<: *defaults
